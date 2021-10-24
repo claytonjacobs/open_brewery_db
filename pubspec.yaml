@@ -1,6 +1,6 @@
 name: open_brewery_db
 description: API wrapper for openbrewerydb.org
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/claytonjacobs/open_brewery_db
 
 environment:

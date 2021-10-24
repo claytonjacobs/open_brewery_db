@@ -5,3 +5,7 @@
 ## 0.0.2
 
 - updated license so pub.dev would recognize it
+
+## 0.0.3
+
+- updated readme
