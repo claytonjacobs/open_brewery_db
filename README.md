@@ -2,6 +2,8 @@ Flutter/Dart API wrapper for [Open Brewery DB](https://www.openbrewerydb.org/).
 
 > [Open Brewery DB](https://www.openbrewerydb.org/) is a free dataset and API with public information on breweries, cideries, brewpubs, and bottleshops. The goal of Open Brewery DB is to maintain an open-source, community-driven dataset and provide a public API. It is our belief that public information should be freely accessible for the betterment of the beer community and the happiness of web developers and data analysts.
 
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+
 ## Features
 
 | List Breweries                                                                                                                        | Get Brewery                                                                                                                        | Search Brewery                                                                                                                          |
