@@ -151,6 +151,19 @@ Future<List<Brewery>>
   final String? createdAt;
 ```
 
+---
+
+## Roadmap
+
+- [ ] Add [autocomplete](https://www.openbrewerydb.org/documentation/04-autocomplete) endpoint
+- [ ] write tests for `get brewery`
+- [ ] write tests for `list breweries`
+- [ ] write tests for `search breweries`
+
+---
+
 ## Additional information
 
 Pull requests are very much welcomed!
+
+[OBDB Frequently Asked Questions](https://www.openbrewerydb.org/faq)
