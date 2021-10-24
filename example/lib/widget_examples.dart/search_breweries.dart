@@ -24,7 +24,11 @@ class _SearchBreweriesState extends State<SearchBreweries> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Search Breweries'),
+        backgroundColor: const Color(0xffFFBB00),
+        title: const Text(
+          'Search Breweries',
+          style: TextStyle(color: Colors.black),
+        ),
       ),
       body: Column(
         children: [
@@ -42,6 +46,9 @@ class _SearchBreweriesState extends State<SearchBreweries> {
                 SizedBox(
                   width: MediaQuery.of(context).size.width,
                   child: OutlinedButton(
+                    style: OutlinedButton.styleFrom(
+                      primary: Colors.black,
+                    ),
                     onPressed: () {
                       setState(() => query = queryTextController.text);
                     },

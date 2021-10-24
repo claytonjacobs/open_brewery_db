@@ -10,11 +10,15 @@ class ListBreweries extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('List Breweries'),
+        backgroundColor: const Color(0xffFFBB00),
+        title: const Text(
+          'List Breweries',
+          style: TextStyle(color: Colors.black),
+        ),
       ),
       body: FutureBuilder<List<Brewery>>(
         future: OpenBreweryDb.listBreweries(
-          byDist: LatLng(latitude: 38.5816, longitude: -121.4944),
+          byCity: "Sacramento",
           sortFields: [SortFieldType.name],
           sortOrder: Sort.asc,
         ),

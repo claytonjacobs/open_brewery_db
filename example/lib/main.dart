@@ -13,18 +13,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-          // Define the default brightness and colors.
-          brightness: Brightness.dark,
-          primaryColor: Colors.yellow[800],
-          buttonTheme: ButtonThemeData(
-            // 4
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(18.0)),
-            buttonColor: Colors.yellow,
-          )),
-      home: const Body(),
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Body(),
     );
   }
 }
@@ -43,7 +34,11 @@ class _BodyState extends State<Body> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('OBDB Example'),
+        backgroundColor: const Color(0xffFFBB00),
+        title: const Text(
+          'Open Brewery DB Example',
+          style: TextStyle(color: Colors.black),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -52,6 +47,9 @@ class _BodyState extends State<Body> {
             SizedBox(
               width: MediaQuery.of(context).size.width,
               child: OutlinedButton(
+                style: OutlinedButton.styleFrom(
+                  primary: Colors.black,
+                ),
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -66,6 +64,9 @@ class _BodyState extends State<Body> {
             SizedBox(
               width: MediaQuery.of(context).size.width,
               child: OutlinedButton(
+                style: OutlinedButton.styleFrom(
+                  primary: Colors.black,
+                ),
                 onPressed: () {
                   Navigator.push(
                     context,
@@ -80,6 +81,9 @@ class _BodyState extends State<Body> {
             SizedBox(
               width: MediaQuery.of(context).size.width,
               child: OutlinedButton(
+                style: OutlinedButton.styleFrom(
+                  primary: Colors.black,
+                ),
                 onPressed: () {
                   Navigator.push(
                     context,

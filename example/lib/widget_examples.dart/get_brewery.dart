@@ -13,7 +13,8 @@ class GetBrewery extends StatefulWidget {
 class _GetBreweryState extends State<GetBrewery> {
   late String idLookup;
   int? current;
-  ButtonStyle selected = OutlinedButton.styleFrom(primary: Colors.blue);
+  ButtonStyle selected =
+      OutlinedButton.styleFrom(primary: const Color(0xffFFBB00));
   ButtonStyle unselected = OutlinedButton.styleFrom(primary: Colors.grey);
 
   @override
@@ -27,7 +28,11 @@ class _GetBreweryState extends State<GetBrewery> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Get Brewery'),
+        backgroundColor: const Color(0xffFFBB00),
+        title: const Text(
+          'Get Brewery',
+          style: TextStyle(color: Colors.black),
+        ),
       ),
       body: FutureBuilder<Brewery>(
         future: OpenBreweryDb.getBrewery(id: idLookup),
