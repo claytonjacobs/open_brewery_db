@@ -1,0 +1,32 @@
+name: open_brewery_db
+description: A new Flutter package project.
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.13.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+
+flutter:
+  # plugin:
+  #   platforms:
+  #     android:
+  #       package: dev.claytonjacobs.open_brewery_db
+  #       pluginClass: OpenBreweryDb
+  #     ios:
+  #       pluginClass: OpenBreweryDb
+  #     macos:
+  #       pluginClass: OpenBreweryDb
+  #     web:
+  #       pluginClass: OpenBreweryDb
+  #       fileName: open_brewery_db_web.dart
