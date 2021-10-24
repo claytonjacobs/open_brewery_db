@@ -22,20 +22,147 @@ know whether this package might be useful for them.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+### Install
+
+**Add package:**
+
+```yaml
+dependencies:
+  open_brewery_db: ^0.0.1
+```
+
+**Run in your project directory**
+
+```
+$ flutter pub get
+```
+
+**Import it**
+
+```dart
+import 'package:open_brewery_db/open_brewery_db.dart';
+```
+
+---
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+### Get Brewery by Id
+
+#### Usage
 
 ```dart
-const like = 'sample';
+Future<Brewery> getBrewery({required String id})
+```
+
+#### Example
+
+```dart
+OpenBreweryDb.getBrewery(id: "sierra-nevada-brewing-co-chico")
+```
+
+---
+
+### List Breweries
+
+#### Usage
+
+```dart
+Future<List<Brewery>> listBreweries({
+    String? byCity,
+    LatLng? byDist,
+    String? byName,
+    String? byState,
+    String? byPostal,
+    BreweryType? byType,
+    int? byPage,
+    int? perPage,
+    List<SortFieldType> sortFields = const [],
+    Sort? sortOrder,
+  })
+```
+
+#### Examples
+
+```dart
+OpenBreweryDb.listBreweries(
+          byCity: "Sacramento",
+          sortFields: [SortFieldType.name],
+          sortOrder: Sort.asc,
+        ),
+```
+
+```dart
+OpenBreweryDb.listBreweries(
+          byState: "California",
+          byCity: "San Diego",
+          sortFields: [SortFieldType.street],
+          sortOrder: Sort.desc,
+        ),
+```
+
+```dart
+OpenBreweryDb.listBreweries(
+          byDist: LatLng(latitude: 38.5816, longitude: -121.4944), // Sacramento, CA
+        ),
+```
+
+---
+
+### Search Breweries
+
+#### Usage
+
+```dart
+Future<List<Brewery>> searchBreweries({
+    required String query,
+  })
+```
+
+#### Examples
+
+```dart
+OpenBreweryDb.searchBreweries(query: "Sierra Nevada")
+```
+
+```dart
+OpenBreweryDb.searchBreweries(query: "Chico California")
+```
+
+---
+
+### Data
+
+```dart
+ Future<Brewery>
+```
+
+```dart
+Future<List<Brewery>>
+```
+
+##### Brewery
+
+```dart
+  final String? id;
+  final String? name;
+  final String? breweryType;
+  final String? street;
+  final String? address_2;
+  final String? address_3;
+  final String? city;
+  final String? state;
+  final String? countyProvince;
+  final String? postalCode;
+  final String? country;
+  final String? longitude;
+  final String? latitude;
+  final String? phone;
+  final String? websiteUrl;
+  final String? updatedAt;
+  final String? createdAt;
 ```
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+Pull requests are very much welcomed!
