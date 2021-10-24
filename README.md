@@ -16,9 +16,9 @@ know whether this package might be useful for them.
 
 ## Features
 
-| List Breweries                                                                                                                        |
-| ------------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="https://github.com/claytonjacobs/open_brewery_db/blob/main/example/assets/readme_images/list_breweries.gif" height="450" /> |
+| List Breweries                                                                                                                        | Get Brewery                                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="https://github.com/claytonjacobs/open_brewery_db/blob/main/example/assets/readme_images/list_breweries.gif" height="500" /> | <img src="https://github.com/claytonjacobs/open_brewery_db/blob/main/example/assets/readme_images/get_brewery.gif" height="500" /> |
 
 ## Getting started
 
