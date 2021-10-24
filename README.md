@@ -18,7 +18,7 @@ know whether this package might be useful for them.
 
 TODO: List what your package can do. Maybe include images, gifs, or videos.
 
-![list_breweries_gif](https://github.com/claytonjacobs/open_brewery_db/blob/main/example/assets/readme_images/list_breweries.gif)
+![list_breweries_gif](https://github.com/claytonjacobs/open_brewery_db/blob/main/example/assets/readme_images/list_breweries.gif =250x)
 
 ## Getting started
 
