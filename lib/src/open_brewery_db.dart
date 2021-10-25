@@ -107,7 +107,6 @@ class OpenBreweryDb {
       'api.openbrewerydb.org',
       '/breweries/$id',
     );
-    print(uri);
     final response = await http.get(uri);
 
     if (response.statusCode == 200) {
@@ -223,7 +222,6 @@ Map<String, dynamic> returnQueryParameters({
       String so = sortOrder.toString().split('.').last;
       qp[_sort] += ':$so';
     }
-    print(qp[_sort]);
   }
   return qp;
 }
