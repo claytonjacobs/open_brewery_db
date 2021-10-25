@@ -1,8 +1,8 @@
-| Pub                                                                                                          | License                                                                                                                 |
-| ------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
-| [![pub package](https://img.shields.io/pub/v/open_brewery_db.svg)](https://pub.dev/packages/open_brewery_db) | [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause) |
+| Pub                                                                                                          | License                                                                                                                 | CI                                                                                                                                                                          |
+| ------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![pub package](https://img.shields.io/pub/v/open_brewery_db.svg)](https://pub.dev/packages/open_brewery_db) | [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause) | [![CI](https://github.com/claytonjacobs/open_brewery_db/actions/workflows/main.yml/badge.svg)](https://github.com/claytonjacobs/open_brewery_db/actions/workflows/main.yml) |
 
-**Flutter/Dart API wrapper for [Open Brewery DB](https://www.openbrewerydb.org/).**
+**Flutter API wrapper for [Open Brewery DB](https://www.openbrewerydb.org/).**
 
 > [Open Brewery DB](https://www.openbrewerydb.org/) is a free dataset and API with public information on breweries, cideries, brewpubs, and bottleshops. The goal of Open Brewery DB is to maintain an open-source, community-driven dataset and provide a public API. It is our belief that public information should be freely accessible for the betterment of the beer community and the happiness of web developers and data analysts.
 
@@ -20,7 +20,7 @@
 
 ```yaml
 dependencies:
-  open_brewery_db: ^0.0.1
+  open_brewery_db: ^0.0.5
 ```
 
 **Run in your project directory**
@@ -161,9 +161,9 @@ Future<List<Brewery>>
 
 - [ ] Add [autocomplete](https://www.openbrewerydb.org/documentation/04-autocomplete) endpoint
 - [ ] Add documentation comments
-- [ ] Write tests for `get brewery`
-- [ ] Write tests for `list breweries`
-- [ ] Write tests for `search breweries`
+- [ ] Write thorough tests for `get brewery` (simple tests are implemented for now)
+- [ ] Write thorough tests for `list breweries` (simple tests are implemented for now)
+- [ ] Write thorough tests for `search breweries` (simple tests are implemented for now)
 
 ---
 

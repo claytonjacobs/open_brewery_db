@@ -20,6 +20,7 @@ class ListBreweries extends StatelessWidget {
         future: OpenBreweryDb.listBreweries(
           byCity: "Sacramento",
           sortFields: [SortFieldType.name],
+          byType: BreweryType.micro,
           sortOrder: Sort.asc,
         ),
         // future: OpenBreweryDb.listBreweries(),

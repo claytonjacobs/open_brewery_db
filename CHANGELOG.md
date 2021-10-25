@@ -13,3 +13,12 @@
 ## 0.0.4
 
 - updated readme
+
+## 0.0.5
+
+- added simple test for List Breweries
+- added simple test for Search Breweries
+- added simple test for Get Brewery
+- added CI badge to readme
+- added package code comments
+- general updates to readme
