@@ -159,8 +159,8 @@ Future<List<Brewery>>
 
 ## Roadmap
 
+- [x] Add documentation comments
 - [ ] Add [autocomplete](https://www.openbrewerydb.org/documentation/04-autocomplete) endpoint
-- [ ] Add documentation comments
 - [ ] Write thorough tests for `get brewery` (simple tests are implemented for now)
 - [ ] Write thorough tests for `list breweries` (simple tests are implemented for now)
 - [ ] Write thorough tests for `search breweries` (simple tests are implemented for now)
