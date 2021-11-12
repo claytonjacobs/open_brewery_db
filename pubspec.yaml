@@ -1,6 +1,6 @@
 name: open_brewery_db
 description: API wrapper for openbrewerydb.org. Search for breweries based on a search term, return lists of breweries and get a single brewery with an ID lookup.
-version: 0.0.5
+version: 0.0.6
 homepage: https://github.com/claytonjacobs/open_brewery_db
 
 environment:
