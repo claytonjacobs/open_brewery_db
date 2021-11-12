@@ -318,8 +318,7 @@ Map<String, dynamic> returnQueryParameters({
     if (perPage < 1) {
       throw Exception("Minimum per page is 1.");
     }
-    // must be converted to string to avoid Uri.https error
-    qp[_per_page] = perPage.toString();
+    qp[_per_page] = perPage.toString(); // issue1 fix
   }
   if (sortFields.isNotEmpty) {
     String lastString =
