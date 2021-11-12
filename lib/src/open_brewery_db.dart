@@ -318,7 +318,7 @@ Map<String, dynamic> returnQueryParameters({
     if (perPage < 1) {
       throw Exception("Minimum per page is 1.");
     }
-    qp[_per_page] = perPage;
+    qp[_per_page] = perPage.toString();
   }
   if (sortFields.isNotEmpty) {
     String lastString =
