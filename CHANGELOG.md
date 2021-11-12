@@ -22,3 +22,7 @@
 - added CI badge to readme
 - added package code comments
 - general updates to readme
+
+## 0.0.6
+
+- fixed perPage parameter

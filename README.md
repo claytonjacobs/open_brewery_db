@@ -20,7 +20,7 @@
 
 ```yaml
 dependencies:
-  open_brewery_db: ^0.0.5
+  open_brewery_db: ^0.0.6
 ```
 
 **Run in your project directory**
